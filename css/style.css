@@ -43,7 +43,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 35em;
 }
 
 
@@ -101,6 +101,13 @@ body {
   font-weight: 700;
 }
 
+.mb-header {
+  margin-bottom: 50%;
+}
+.mx-file {
+  margin-left: 22.5%;
+  margin-right: 22.5%;
+}
 
 /*
  * Footer
