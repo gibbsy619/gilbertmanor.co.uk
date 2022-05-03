@@ -102,7 +102,7 @@ body {
 }
 
 .mb-header {
-  margin-bottom: 50%;
+  margin-bottom: auto!important;
 }
 .mx-file {
   margin-left: 22.5%;
