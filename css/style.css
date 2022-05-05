@@ -26,8 +26,13 @@ a:hover {
 
 html,
 body {
+  font-family: futura std;
   height: 100%;
-  background-color: #333;
+  background-color: #ADAD85;
+  /* background-image: url("manor.png");
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: center; */
 }
 
 body {
@@ -82,10 +87,12 @@ body {
 
 @media (min-width: 48em) {
   .masthead-brand {
-    float: left;
+    float: center;
+    font-size: xx-large;
   }
   .nav-masthead {
-    float: right;
+    float: center;
+    font-size: large;
   }
 }
 
@@ -103,6 +110,7 @@ body {
 
 .mb-header {
   margin-bottom: auto!important;
+  margin-top: .5%;
 }
 .mx-file {
   margin-left: 22.5%;
