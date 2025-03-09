@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    /* --foreground: #ededed; */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  font-family: 'Fira Sans', sans-serif; 
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bgMove {
+  background: linear-gradient(45deg, #a8e6cf, #ffb6b9, #ffcc99, #d4f1f4, #c8e6c9);
+  background-size: 400% 400%;
+  animation: bgMove 15s infinite alternate ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.drop-shadow-md {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+@media (max-width: 768px) {
+  .animate-bgMove {
+    background-size: 200% 200%;
+  }
+}
+
